@@ -17,12 +17,12 @@ function CookiesPolicy() {
 
       {/* Content */}
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-16">
-        <h1 className="text-3xl md:text-4xl font-bold text-white mb-2">Politica de Cookies</h1>
+        <h1 className="text-3xl md:text-4xl font-bold text-white mb-2">Política de Cookies</h1>
         <p className="text-lg text-primary-400 font-semibold mb-1">UNI2GLOBAL LLC</p>
-        <p className="text-sm text-white/50 mb-10">Ultima actualizacion: Febrero 2026</p>
+        <p className="text-sm text-white/50 mb-10">Última actualización: Febrero 2026</p>
 
-        <Section number="1" title="Que son las Cookies">
-          <p>Las cookies son pequenos archivos de texto que se almacenan en su dispositivo (ordenador, tablet o movil) cuando visita un sitio web. Son ampliamente utilizadas para hacer que los sitios web funcionen de manera mas eficiente, asi como para proporcionar informacion a los propietarios del sitio.</p>
+        <Section number="1" title="Qué son las Cookies">
+          <p>Las cookies son pequeños archivos de texto que se almacenan en su dispositivo (ordenador, tablet o móvil) cuando visita un sitio web. Son ampliamente utilizadas para hacer que los sitios web funcionen de manera más eficiente, así como para proporcionar información a los propietarios del sitio.</p>
         </Section>
 
         <Section number="2" title="Cookies que Utilizamos">
@@ -32,21 +32,21 @@ function CookiesPolicy() {
             <CookieCategory
               title="Cookies Estrictamente Necesarias"
               description="Estas cookies son esenciales para que usted pueda navegar por el sitio web y utilizar sus funciones. Sin estas cookies, los servicios que ha solicitado no pueden ser proporcionados."
-              examples={['Sesion de usuario', 'Preferencias de seguridad', 'Token de autenticacion']}
-              duration="Sesion / 30 dias"
+              examples={['Sesión de usuario', 'Preferencias de seguridad', 'Token de autenticación']}
+              duration="Sesión / 30 días"
               canDisable={false}
             />
             <CookieCategory
               title="Cookies de Rendimiento"
-              description="Estas cookies recogen informacion sobre como los visitantes utilizan un sitio web. Nos ayudan a entender como mejorar el sitio."
-              examples={['Paginas visitadas', 'Tiempo de carga', 'Errores encontrados']}
+              description="Estas cookies recogen información sobre cómo los visitantes utilizan un sitio web. Nos ayudan a entender cómo mejorar el sitio."
+              examples={['Páginas visitadas', 'Tiempo de carga', 'Errores encontrados']}
               duration="Hasta 12 meses"
               canDisable={true}
             />
             <CookieCategory
               title="Cookies de Funcionalidad"
-              description="Estas cookies permiten que el sitio web recuerde las elecciones que usted hace (como su idioma preferido) y proporcionan funciones mejoradas y mas personales."
-              examples={['Idioma seleccionado', 'Region', 'Preferencias de visualizacion']}
+              description="Estas cookies permiten que el sitio web recuerde las elecciones que usted hace (como su idioma preferido) y proporcionan funciones mejoradas y más personales."
+              examples={['Idioma seleccionado', 'Región', 'Preferencias de visualización']}
               duration="Hasta 12 meses"
               canDisable={true}
             />
@@ -66,13 +66,13 @@ function CookiesPolicy() {
               </thead>
               <tbody>
                 <tr className="border-b border-white/5">
-                  <td className="px-4 py-3 text-white/80 font-medium">Servicios de analisis</td>
-                  <td className="px-4 py-3 text-white/60">Analisis de uso del sitio</td>
+                  <td className="px-4 py-3 text-white/80 font-medium">Servicios de análisis</td>
+                  <td className="px-4 py-3 text-white/60">Análisis de uso del sitio</td>
                   <td className="px-4 py-3 text-white/60">Rendimiento</td>
                 </tr>
                 <tr className="border-b border-white/5">
                   <td className="px-4 py-3 text-white/80 font-medium">Proveedores de infraestructura</td>
-                  <td className="px-4 py-3 text-white/60">Distribucion de contenido</td>
+                  <td className="px-4 py-3 text-white/60">Distribución de contenido</td>
                   <td className="px-4 py-3 text-white/60">Necesarias</td>
                 </tr>
               </tbody>
@@ -80,33 +80,33 @@ function CookiesPolicy() {
           </div>
         </Section>
 
-        <Section number="4" title="Como Gestionar las Cookies">
-          <p className="mb-4">Usted puede controlar y/o eliminar las cookies como desee. Puede eliminar todas las cookies que ya estan en su dispositivo y puede configurar la mayoria de los navegadores para evitar que se coloquen.</p>
+        <Section number="4" title="Cómo Gestionar las Cookies">
+          <p className="mb-4">Usted puede controlar y/o eliminar las cookies como desee. Puede eliminar todas las cookies que ya están en su dispositivo y puede configurar la mayoría de los navegadores para evitar que se coloquen.</p>
           <div className="space-y-3">
-            <BrowserInfo name="Google Chrome" path="Configuracion > Privacidad y seguridad > Cookies" />
+            <BrowserInfo name="Google Chrome" path="Configuración > Privacidad y seguridad > Cookies" />
             <BrowserInfo name="Mozilla Firefox" path="Opciones > Privacidad & Seguridad > Cookies" />
             <BrowserInfo name="Safari" path="Preferencias > Privacidad > Cookies" />
-            <BrowserInfo name="Microsoft Edge" path="Configuracion > Privacidad > Cookies" />
+            <BrowserInfo name="Microsoft Edge" path="Configuración > Privacidad > Cookies" />
           </div>
           <div className="glass-card p-4 mt-6 border-l-2 border-yellow-400/60">
-            <p className="text-white/70 text-sm"><strong className="text-white/90">Nota:</strong> Si deshabilita las cookies, es posible que algunas funciones del sitio no esten disponibles o no funcionen correctamente.</p>
+            <p className="text-white/70 text-sm"><strong className="text-white/90">Nota:</strong> Si deshabilita las cookies, es posible que algunas funciones del sitio no estén disponibles o no funcionen correctamente.</p>
           </div>
         </Section>
 
         <Section number="5" title="Base Legal">
           <p className="mb-3">El uso de cookies se basa en:</p>
           <ul className="space-y-2 text-white/70">
-            <li className="flex items-start gap-2"><span className="text-green-400 mt-0.5">&#10003;</span> <strong className="text-white/90">Cookies necesarias:</strong> Interes legitimo (Art. 6.1.f RGPD) - necesarias para el funcionamiento del servicio</li>
-            <li className="flex items-start gap-2"><span className="text-green-400 mt-0.5">&#10003;</span> <strong className="text-white/90">Cookies de rendimiento y funcionalidad:</strong> Consentimiento (Art. 6.1.a RGPD) - solo se activan con su autorizacion</li>
+            <li className="flex items-start gap-2"><span className="text-green-400 mt-0.5">&#10003;</span> <strong className="text-white/90">Cookies necesarias:</strong> Interés legítimo (Art. 6.1.f RGPD) - necesarias para el funcionamiento del servicio</li>
+            <li className="flex items-start gap-2"><span className="text-green-400 mt-0.5">&#10003;</span> <strong className="text-white/90">Cookies de rendimiento y funcionalidad:</strong> Consentimiento (Art. 6.1.a RGPD) - solo se activan con su autorización</li>
           </ul>
         </Section>
 
         <Section number="6" title="Actualizaciones">
-          <p>Podemos actualizar esta Politica de Cookies periodicamente para reflejar cambios en las cookies que utilizamos o por otros motivos operativos, legales o regulatorios. Le recomendamos que visite esta pagina regularmente para estar informado sobre nuestro uso de cookies.</p>
+          <p>Podemos actualizar esta Política de Cookies periódicamente para reflejar cambios en las cookies que utilizamos o por otros motivos operativos, legales o regulatorios. Le recomendamos que visite esta página regularmente para estar informado sobre nuestro uso de cookies.</p>
         </Section>
 
         <Section number="7" title="Contacto">
-          <p>Si tiene alguna pregunta sobre nuestra Politica de Cookies, puede contactarnos en:</p>
+          <p>Si tiene alguna pregunta sobre nuestra Política de Cookies, puede contactarnos en:</p>
           <div className="glass-card p-4 mt-3">
             <p className="text-white/70">Uni2Global LLC</p>
             <p className="text-white/70">Email: <a href="mailto:info@uni2global.com" className="text-primary-400 hover:underline">info@uni2global.com</a></p>
@@ -148,7 +148,7 @@ function CookieCategory({ title, description, examples, duration, canDisable }) 
           <span key={i} className="text-xs bg-white/5 text-white/50 px-2 py-1 rounded">{ex}</span>
         ))}
       </div>
-      <p className="text-white/40 text-xs">Duracion: {duration}</p>
+      <p className="text-white/40 text-xs">Duración: {duration}</p>
     </div>
   )
 }
