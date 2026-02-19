@@ -1,4 +1,5 @@
 import { useEffect } from 'react'
+import { Routes, Route, useLocation } from 'react-router-dom'
 import Navbar from './components/Navbar'
 import Hero from './components/Hero'
 import WhyChange from './components/WhyChange'
@@ -6,8 +7,10 @@ import WhatChanges from './components/WhatChanges'
 import Timeline from './components/Timeline'
 import CallToAction from './components/CallToAction'
 import Footer from './components/Footer'
+import PrivacyPolicy from './pages/PrivacyPolicy'
+import CookiesPolicy from './pages/CookiesPolicy'
 
-function App() {
+function HomePage() {
   useEffect(() => {
     const observer = new IntersectionObserver(
       (entries) => {
@@ -30,6 +33,28 @@ function App() {
   }, [])
 
   return (
+    <>
+      <Navbar />
+      <Hero />
+      <WhyChange />
+      <WhatChanges />
+      <Timeline />
+      <CallToAction />
+      <Footer />
+    </>
+  )
+}
+
+function ScrollToTop() {
+  const { pathname } = useLocation()
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [pathname])
+  return null
+}
+
+function App() {
+  return (
     <div className="min-h-screen bg-dark-500 relative">
       {/* Background ambient effects */}
       <div className="fixed inset-0 pointer-events-none overflow-hidden">
@@ -39,13 +64,12 @@ function App() {
       </div>
 
       <div className="relative z-10">
-        <Navbar />
-        <Hero />
-        <WhyChange />
-        <WhatChanges />
-        <Timeline />
-        <CallToAction />
-        <Footer />
+        <ScrollToTop />
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/privacidad" element={<PrivacyPolicy />} />
+          <Route path="/cookies" element={<CookiesPolicy />} />
+        </Routes>
       </div>
     </div>
   )

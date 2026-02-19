@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom'
+
 function Footer() {
   return (
     <footer className="border-t border-white/5">
@@ -28,6 +30,20 @@ function Footer() {
             >
               info@uni2global.com
             </a>
+            <span className="text-white/10">|</span>
+            <Link
+              to="/privacidad"
+              className="text-white/40 hover:text-primary-400 transition-colors duration-300"
+            >
+              Privacidad
+            </Link>
+            <span className="text-white/10">|</span>
+            <Link
+              to="/cookies"
+              className="text-white/40 hover:text-primary-400 transition-colors duration-300"
+            >
+              Cookies
+            </Link>
           </div>
         </div>
       </div>
